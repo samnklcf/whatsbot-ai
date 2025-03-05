@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Home / whatsbot-ai</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+            /* Styles pour la timeline */
+            #how-to-create {
+              background: linear-gradient(135deg, #f9f9f9 0%, #e0f7fa 100%);
+              padding: 100px 0;
+            }
+            #how-to-create .container {
+              position: relative;
+            }
+            #how-to-create h2 {
+              color: #218838;
+              font-size: 2.8rem;
+              margin-bottom: 50px;
+            }
+            .timeline {
+              position: relative;
+              margin: 0 auto;
+              padding: 20px 0;
+              width: 90%;
+            }
+            .timeline:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 4px;
+              height: 100%;
+              background: #218838;
+            }
+            .timeline-item {
+              position: relative;
+              margin: 20px 0;
+              width: 50%;
+              padding: 20px 40px;
+              box-sizing: border-box;
+              opacity: 0;
+              transform: translateY(30px);
+              transition: all 0.6s ease-out;
+            }
+            .timeline-item.visible {
+              opacity: 1;
+              transform: translateY(0);
+            }
+            .timeline-item:nth-child(odd) {
+              left: 0;
+              text-align: right;
+            }
+            .timeline-item:nth-child(even) {
+              left: 50%;
+            }
+            .timeline-item .timeline-icon {
+              position: absolute;
+              top: 20px;
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              background: #218838;
+              color: white;
+              border-radius: 50%;
+              text-align: center;
+              font-size: 1.2rem;
+            }
+            .timeline-item:nth-child(odd) .timeline-icon {
+              right: -20px;
+            }
+            .timeline-item:nth-child(even) .timeline-icon {
+              left: -20px;
+            }
+            .timeline-item .timeline-content {
+              background: #fff;
+              padding: 20px;
+              border-radius: 6px;
+              box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            }
+            .timeline-item:nth-child(odd) .timeline-content {
+              margin-right: 60px;
+            }
+            .timeline-item:nth-child(even) .timeline-content {
+              margin-left: 60px;
+            }
+            .timeline-item h3 {
+              margin-top: 0;
+              color: #218838;
+            }
+            .timeline-item p {
+              margin-bottom: 0;
+              color: #555;
+            }
+            @media (max-width: 767px) {
+              .timeline:before {
+                left: 20px;
+              }
+              .timeline-item {
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 20px;
+                text-align: left;
+                left: 0 !important;
+              }
+              .timeline-item .timeline-icon {
+                left: 0;
+              }
+              .timeline-item .timeline-content {
+                margin: 0 0 20px 60px;
+              }
+            }
+          </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="/"><img src="./assets/img/samol.jpeg" alt="" width="50" srcset="" >What's Bot AI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#whatsbot-ai">Pourquoi nous choisir ?</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Fonctionnalités</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#pricing">Tarifs</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="/contact.html">Contact</a></li>
+                    </ul>
+                    <a class="btn btn-success rounded-pill px-3 mb-2 mb-lg-0" href="#command">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-dots-fill me-2"></i>
+                            <span class="small">Créer mon Chatbot</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Mashead header-->
+        <header class="masthead">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <!-- Texte principal -->
+                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                            <h4 class="display-4 lh-6 mb-3">Automatisez vos conversations WhatsApp en toute simplicité !</h4>
+                            <p class="lead fw-normal text-muted mb-5">
+                                Gagnez du temps et améliorez l'expérience de vos clients avec un chatbot WhatsApp intelligent, 
+                                hébergé et géré par <strong>Alissa IA</strong>. Répondez instantanément, programmez des rendez-vous 
+                                et optimisez votre service client sans effort !
+                            </p>
+                            <a href="#command" class="btn btn-success btn-lg px-4">Créer mon Chatbot</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Mockup téléphone -->
+                        <div class="masthead-device-mockup">
+                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                        <stop class="gradient-start-color" offset="0%"></stop>
+                                        <stop class="gradient-end-color" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <div class="device-wrapper">
+                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                    <div class="screen bg-black">
+                                        <!-- Vidéo ou image de démonstration -->
+                                        <video muted="muted" autoplay loop style="max-width: 100%; height: 100%">
+                                            <source src="assets/img/demo-screen.mp4" type="video/mp4" />
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="whatsbot-ai" style="background-color: #FCF3CF; padding: 80px 0;">
+            <div class="container px-5">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 text-center">
+                        <img src="./assets/img/pexels-divinetechygirl-1181712.jpg" alt="Whats'Bot AI" class="img-fluid rounded-3 shadow" style="max-width: 90%;">
+                    </div>
+                    <!-- Texte à gauche -->
+                    <div class="col-lg-6">
+                        <h2 class="font-alt" style="color: #218838; font-size: 2.5rem;">Qu'est-ce que Whats'Bot AI ?</h2>
+                        <p style="color: #333; font-size: 1.2rem; line-height: 1.6;">
+                            <strong>Whats'Bot AI</strong> est une solution avancée qui vous permet d'automatiser et d'améliorer vos interactions client sur **WhatsApp**.  
+                            Grâce à **l'intelligence artificielle**, votre entreprise peut répondre instantanément aux demandes, prendre des rendez-vous et fournir des informations en continu, sans intervention humaine.
+                        </p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li><i class="bi-check-circle" style="color: #218838;"></i> Réponses automatiques intelligentes</li>
+                            <li><i class="bi-check-circle" style="color: #218838;"></i> Gestion simplifiée des rendez-vous</li>
+                            <li><i class="bi-check-circle" style="color: #218838;"></i> Analyse des conversations</li>
+                            <li><i class="bi-check-circle" style="color: #218838;"></i> Intégration avec votre base de données</li>
+                        </ul>
+                        <a href="#command" class="btn btn-primary mt-3" style="background-color: #218838; border: none; font-size: 1.1rem;">
+                            Découvrir Whats'Bot AI
+                        </a>
+                    </div>
+                    
+                    <!-- Image à droite -->
+                    
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Quote/testimonial aside-->
+       
+        
+        <!-- App features section-->
+        <section id="features" style="background-color: #f4f4f4;">
+            <div class="container px-5">
+                <!-- Title section -->
+                <div class="text-center mb-5">
+                    <h2 class="font-alt" style="color: #218838; font-size: 2.5rem;">Pourquoi nous choisir ?</h2>
+                    <p class="text-muted mb-0" style="color: #000; font-size: 1.2rem;">Découvrez les avantages de notre solution et comment elle peut améliorer votre expérience.</p>
+                </div>
+                
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
+                        <div class="container-fluid px-5">
+                            <div class="row gx-5">
+                                <!-- Feature item 1 -->
+                                <div class="col-md-6 mb-5">
+                                    <div class="text-center">
+                                        <i class="bi-chat-dots icon-feature" style="color: #218838; font-size: 3rem; margin-bottom: 1rem;"></i>
+                                        <h3 class="font-alt" style="color: #218838;">Chatbot WhatsApp Personnalisé</h3>
+                                        <p class="text-muted mb-0" style="color: #000;">Offrez à vos clients une interaction fluide et personnalisée grâce à notre chatbot WhatsApp. Facile à configurer et adapté à vos besoins spécifiques.</p>
+                                    </div>
+                                </div>
+                                <!-- Feature item 2 -->
+                                <div class="col-md-6 mb-5">
+                                    <div class="text-center">
+                                        <i class="bi-calendar-check icon-feature" style="color: #218838; font-size: 3rem; margin-bottom: 1rem;"></i>
+                                        <h3 class="font-alt" style="color: #218838;">Gestion des Rendez-vous</h3>
+                                        <p class="text-muted mb-0" style="color: #000;">Permettez à vos clients de prendre rendez-vous directement via WhatsApp et suivez leurs réservations facilement depuis le dashboard.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Feature item 3 -->
+                                <div class="col-md-6 mb-5 mb-md-0">
+                                    <div class="text-center">
+                                        <i class="bi-bar-chart icon-feature" style="color: #218838; font-size: 3rem; margin-bottom: 1rem;"></i>
+                                        <h3 class="font-alt" style="color: #218838;">Analyse des Messages</h3>
+                                        <p class="text-muted mb-0" style="color: #000;">Profitez de l'analyse des messages reçus pour mieux comprendre vos utilisateurs et améliorer l'expérience client en temps réel.</p>
+                                    </div>
+                                </div>
+                                <!-- Feature item 4 -->
+                                <div class="col-md-6">
+                                    <div class="text-center">
+                                        <i class="bi-lock icon-feature" style="color: #218838; font-size: 3rem; margin-bottom: 1rem;"></i>
+                                        <h3 class="font-alt" style="color: #218838;">Sécurité et Fiabilité</h3>
+                                        <p class="text-muted mb-0" style="color: #000;">Nous assurons une sécurité maximale pour vos données, avec des serveurs fiables et une protection optimale pour vos informations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-0">
+                        <!-- Device Mockup section -->
+                        <div class="features-device-mockup">
+                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                        <stop class="gradient-start-color" offset="0%" style="stop-color: #218838;"></stop>
+                                        <stop class="gradient-end-color" offset="100%" style="stop-color: #fff;"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="50" fill="url(#circleGradient)"></circle>
+                            </svg>
+                            <svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)" fill="#218838"></rect>
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)" fill="#218838"></rect>
+                            </svg>
+                            <svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50" fill="#fff"></circle></svg>
+                            <div class="device-wrapper">
+                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                    <div class="screen bg-black">
+                                        <!-- Content: Video demonstration or image of the app -->
+                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%">
+                                            <source src="assets/img/demo-screen.mp4" type="video/mp4" />
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" style="position: relative; background: url('./assets/img/1.jpg') center/cover no-repeat fixed; padding: 100px 0;">
+            <!-- Overlay sombre pour améliorer la lisibilité du texte -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6);"></div>
+            
+            <div class="container text-center position-relative" style="z-index: 2;">
+                <h2 class="font-alt" style="color: #fff; font-size: 2.8rem; font-weight: bold;">Transformez WhatsApp en un outil puissant pour votre entreprise</h2>
+                <p style="color: #f8f9fa; font-size: 1.3rem; max-width: 700px; margin: 20px auto;">
+                    Automatisez vos interactions, améliorez votre service client et boostez votre productivité avec <strong>Whats'Bot AI</strong>.
+                </p>
+                <a href="#command" class="btn btn-lg mt-3" style="background-color: #198754; color: white; font-size: 1.2rem; font-weight: bold; padding: 15px 30px; border-radius: 50px;">
+                    Commencer maintenant
+                </a>
+            </div>
+        </section>
+
+        <section id="how-to-create">
+            <div class="container text-center">
+              <h2 class="font-alt">Comment créer votre Chatbot WhatsApp</h2>
+              <p class="text-muted" style="font-size: 1.2rem; color: #555; margin-bottom: 50px;">
+                Suivez ces étapes simples pour transformer WhatsApp en un outil puissant pour votre entreprise.
+              </p>
+              <div class="timeline">
+                <!-- Étape 1 -->
+                <div class="timeline-item">
+                  <div class="timeline-icon">1</div>
+                  <div class="timeline-content">
+                    <h3><i class="fas fa-handshake"></i> Choisir une Offre</h3>
+                    <p>Sélectionnez l'offre adaptée à vos besoins, avec des fonctionnalités sur-mesure.</p>
+                  </div>
+                </div>
+                <!-- Étape 2 -->
+                <div class="timeline-item">
+                  <div class="timeline-icon">2</div>
+                  <div class="timeline-content">
+                    <h3><i class="fas fa-shopping-cart"></i> Passer Commande</h3>
+                    <p>Remplissez le formulaire pour finaliser votre commande et obtenir plus de détails.</p>
+                  </div>
+                </div>
+                <!-- Étape 3 -->
+                <div class="timeline-item">
+                  <div class="timeline-icon">3</div>
+                  <div class="timeline-content">
+                    <h3><i class="fas fa-check-circle"></i> Valider la Commande</h3>
+                    <p>Recevez une confirmation par email et vérifiez que tout est en ordre.</p>
+                  </div>
+                </div>
+                <!-- Étape 4 -->
+                <div class="timeline-item">
+                  <div class="timeline-icon">4</div>
+                  <div class="timeline-content">
+                    <h3><i class="fas fa-cogs"></i> Initialisation du Compte</h3>
+                    <p>Nous configurons votre compte en vérifiant vos informations pour démarrer le processus.</p>
+                  </div>
+                </div>
+                <!-- Étape 5 -->
+                <div class="timeline-item">
+                  <div class="timeline-icon">5</div>
+                  <div class="timeline-content">
+                    <h3><i class="fas fa-robot"></i> Paramétrer le Chatbot</h3>
+                    <p>Attribuez un nom à votre chatbot, définissez ses missions et personnalisez ses réponses.</p>
+                  </div>
+                </div>
+                <!-- Étape 6 -->
+                <div class="timeline-item">
+                  <div class="timeline-icon">6</div>
+                  <div class="timeline-content">
+                    <h3><i class="fab fa-whatsapp"></i> Chatbot WhatsApp</h3>
+                    <p>Votre chatbot est opérationnel sur WhatsApp et prêt à automatiser vos interactions.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5">
+                <a href="#cta" class="btn btn-lg" style="background-color: #198754; color: white; padding: 15px 30px; border-radius: 50px;">
+                  Commencer Maintenant
+                </a>
+              </div>
+            </div>
+          </section>
+        
+ 
+
+        <section id="pricing" style="background-color: #f9f9f9;">
+            <div class="container px-5">
+                <!-- Title section -->
+                <div class="text-center mb-5">
+                    <h2 class="font-alt" style="color: #218838; font-size: 2.5rem;">Nos Offres</h2>
+                    <p class="text-muted mb-0" style="color: #000; font-size: 1.2rem;">Choisissez l'offre qui vous convient le mieux et optimisez votre expérience client.</p>
+                </div>
+        
+                <div class="row gx-5">
+                    <!-- Offre 1 -->
+                    <div class="col-lg-4 mb-5">
+                        <div class="card shadow border-light rounded-3" style="border: 1px solid #218838;">
+                            <div class="card-header text-center" style="background-color: #218838; color: white;">
+                                <h3 class="font-alt" style="font-size: 1.8rem;">Offre 1</h3>
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="font-alt" style="color: #218838; font-size: 2rem;">150.000 FCFA</h4>
+                                <p class="text-muted" style="font-size: 1.1rem;">Installation + 55.000 FCFA/mois</p>
+                                <ul class="list-unstyled mb-4">
+                                    <li><i class="bi-check-circle" style="color: #218838;"></i> Chatbot WhatsApp personnalisé</li>
+                                    <li><i class="bi-check-circle" style="color: #218838;"></i> Historique des conversations</li>
+                                    <li><i class="bi-check-circle" style="color: #218838;"></i> Hébergement chez Alissa IA</li>
+                                    <li><i class="bi-check-circle" style="color: #218838;"></i> Limité à 5.000 messages/mois</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary" style="background-color: #218838;">Choisir cette offre</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Offre 2 -->
+                    <div class="col-lg-4 mb-5">
+                        <div class="card shadow border-light rounded-3" style="border: 1px solid #218838;">
+                            <div class="card-header text-center" style="background-color: #FFD700; color: white;">
+                                <h3 class="font-alt" style="font-size: 1.8rem;">Offre 2</h3>
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="font-alt" style="color: #FFD700; font-size: 2rem;">200.000 FCFA</h4>
+                                <p class="text-muted" style="font-size: 1.1rem;">Installation + 65.000 FCFA/mois</p>
+                                <ul class="list-unstyled mb-4">
+                                    <li><i class="bi-check-circle" style="color: #FFD700;"></i> Chatbot WhatsApp personnalisé</li>
+                                    <li><i class="bi-check-circle" style="color: #FFD700;"></i> Historique des conversations</li>
+                                    <li><i class="bi-check-circle" style="color: #FFD700;"></i> Analyse des messages reçus</li>
+                                    <li><i class="bi-check-circle" style="color: #FFD700;"></i> Vérification dans une base de données</li>
+                                    <li><i class="bi-check-circle" style="color: #FFD700;"></i> Limité à 10.000 messages/mois</li>
+                                    <li><i class="bi-check-circle" style="color: #FFD700;"></i> Prise de rendez-vous</li>
+                                    <li><i class="bi-check-circle" style="color: #FFD700;"></i> Hébergement chez Alissa IA</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary" style="background-color: #218838;">Choisir cette offre</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Offre 3 -->
+                    <div class="col-lg-4 mb-5">
+                        <div class="card shadow border-light rounded-3" style="border: 1px solid #218838;">
+                            <div class="card-header text-center" style="background-color: #218838; color: white;">
+                                <h3 class="font-alt" style="font-size: 1.8rem;">Offre 3</h3>
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="font-alt" style="color: #218838; font-size: 2rem;">Sur mesure</h4>
+                                <p class="text-muted" style="font-size: 1.1rem;">Personnalisée selon vos besoins</p>
+                                <ul class="list-unstyled mb-4">
+                                    <li><i class="bi-check-circle" style="color: #218838;"></i> Chatbot WhatsApp personnalisé</li>
+                                    <li><i class="bi-check-circle" style="color: #218838;"></i> Historique des conversations</li>
+                                    <li><i class="bi-check-circle" style="color: #218838;"></i> Analyse des messages reçus</li>
+                                    <li><i class="bi-check-circle" style="color: #218838;"></i> Vérification dans une base de données</li>
+                                    <li><i class="bi-check-circle" style="color: #218838;"></i> Prise de rendez-vous</li>
+                                    <li><i class="bi-check-circle" style="color: #218838;"></i> Fonctionnalités supplémentaires à la demande</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary" style="background-color: #218838;">Choisir cette offre</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+       
+
+        <div class="container my-5" id="command">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card shadow-lg p-4">
+                        <h3 class="text-center mb-4">📩 Passez votre commande</h3>
+        
+                        <form id="form">
+                            <!-- Clé API Web3Forms -->
+                            <input
+                            type="hidden"
+                            name="access_key"
+                            value="61cae21a-3814-44e1-a55e-b9fcb070bb54"
+                          />
+        
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Nom</label>
+                                    <input type="text" name="nom" class="form-control" placeholder="Votre nom" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Prénom</label>
+                                    <input type="text" name="prenom" class="form-control" placeholder="Votre prénom" required>
+                                </div>
+                            </div>
+        
+                            <div class="mt-3">
+                                <label class="form-label">Numéro de contact</label>
+                                <input type="tel" name="contact" class="form-control" placeholder="Ex: +241 74 57 00 40" required>
+                            </div>
+        
+                            <div class="mt-3">
+                                <label class="form-label">Adresse e-mail</label>
+                                <input type="email" name="email" class="form-control" placeholder="Ex: contact@exemple.com" required>
+                            </div>
+        
+                            <div class="mt-3">
+                                <label class="form-label">Numéro WhatsApp</label>
+                                <input type="tel" name="whatsapp" class="form-control" placeholder="Ex: +241 65 18 26 11" required>
+                            </div>
+        
+                            <div class="mt-3">
+                                <label class="form-label">Choix de l’offre</label>
+                                <select name="offre" class="form-select" required>
+                                    <option value="">Sélectionnez une offre</option>
+                                    <option value="offre1">Offre 1 - 150.000 FCFA (55.000 FCFA/mois)</option>
+                                    <option value="offre2">Offre 2 - 200.000 FCFA (65.000 FCFA/mois)</option>
+                                    <option value="offre3">Offre Personnalisée</option>
+                                </select>
+                            </div>
+        
+                            <div class="mt-3">
+                                <label class="form-label">Date du rendez-vous</label>
+                                <input type="date" name="date_rdv" class="form-control" required>
+                            </div>
+        
+                            <div class="mt-4 text-center">
+                                <button type="submit" class="btn btn-success btn-lg w-100">📨 Envoyer ma demande</button>
+                            </div>
+                            
+                            <div id="result" class="text-center mt-3"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+        
+        <!-- SweetAlert2 -->
+       
+        
+        
+        
+
+        <!-- Footer-->
+        <footer class="bg-dark text-center text-white pt-5 pb-3">
+            <div class="container">
+                <!-- Réseaux Sociaux -->
+                <div class="mb-4">
+                    <a href="https://facebook.com/alissaia" class="text-white mx-3" target="_blank">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://twitter.com/alissa_ia" class="text-white mx-3" target="_blank">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://instagram.com/alissa.ia" class="text-white mx-3" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://linkedin.com/company/alissa-ia" class="text-white mx-3" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+        
+                <!-- Liens supplémentaires -->
+                <div class="mb-3">
+                    <a href="#!" class="text-white mx-2 text-decoration-none">Politique de confidentialité</a>
+                    <span class="text-white">|</span>
+                    <a href="#!" class="text-white mx-2 text-decoration-none">Conditions d'utilisation</a>
+                    <span class="text-white">|</span>
+                    <a href="#!" class="text-white mx-2 text-decoration-none">FAQ</a>
+                </div>
+        
+                <!-- Copyright -->
+                <div class="text-white-50 small mb-4">
+                    <p>&copy; 2025 <strong>Alissa IA</strong>. Tous droits réservés.</p>
+                </div>
+        
+                <!-- Abonnement à la newsletter -->
+                
+            </div>
+        
+            <!-- Bottom footer note -->
+            <div class="bg-black py-2">
+                <p class="text-white text-center mb-0">Créé par <a href="https://alissa-ia.site" class="text-white">Alissa IA</a></p>
+            </div>
+        </footer>
+        
+        
+        <!-- Bootstrap core JS-->
+        <script>
+            // Animation d'apparition des éléments de la timeline au scroll
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const observerOptions = {
+              threshold: 0.3
+            };
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+                }
+              });
+            }, observerOptions);
+          
+            timelineItems.forEach(item => {
+              observer.observe(item);
+            });
+          </script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="./js/forms.js"></script>
+        
+        
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
