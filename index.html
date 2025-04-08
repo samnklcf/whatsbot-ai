@@ -182,32 +182,38 @@
         </nav>
         
         <!-- Mashead header-->
-        <header class="masthead">
+         <br><br>
+        <header class="masthead " style="padding-left: 20px;">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
-                        <div class="mb-5 mb-lg-0 text-center text-lg-start" data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">
-                            <h4 class="display-4 lh-6 mb-3">Transformez WhatsApp en Machine à Vendre 24/7 !</h4>
+                        <!-- Texte principal -->
+                        <div class="mb-5 mb-lg-0 text-center text-lg-start"data-aos="fade-right" data-aos-duration="500" data-aos-delay="500" >
+                            <h4 class="display-4 lh-6 mb-3">Automatisez vos conversations WhatsApp en toute simplicité !</h4>
                             <p class="lead fw-normal text-muted mb-5">
-                                Vos clients attendent des réponses immédiates, mais vous perdez du temps à gérer chaque message ? Avec <strong>Whats'Bot AI</strong>, automatisez vos conversations sur WhatsApp, fidélisez vos clients et boostez vos ventes sans effort. Rejoignez les 250 millions d’utilisateurs africains déjà sur WhatsApp – vos clients y sont, et ils vous attendent !
+                                Gagnez du temps et améliorez l'expérience de vos clients avec un chatbot WhatsApp intelligent, 
+                                hébergé et géré par <strong>Alissa IA</strong>. Répondez instantanément, programmez des rendez-vous 
+                                et optimisez votre service client sans effort !
                             </p>
-                            <a href="#command" class="btn btn-success btn-lg px-4">Démarrez Maintenant</a>
+                            <a href="#command" class="btn btn-success btn-lg px-4">Créer mon Chatbot</a>
                         </div>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500" >
+                        <!-- Mockup téléphone -->
                         <div class="masthead-device-mockup">
                             <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
-                                    <linearGradient id="circleGradient1" gradientTransform="rotate(45)">
+                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
                                         <stop class="gradient-start-color" offset="0%"></stop>
                                         <stop class="gradient-end-color" offset="100%"></stop>
                                     </linearGradient>
                                 </defs>
-                                <circle cx="50" cy="50" r="50" fill="url(#circleGradient1)"></circle>
+                                <circle cx="50" cy="50" r="50"></circle>
                             </svg>
                             <div class="device-wrapper">
                                 <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                                     <div class="screen bg-black">
+                                        <!-- Vidéo ou image de démonstration -->
                                         <video muted="muted" autoplay loop style="max-width: 100%; height: 100%">
                                             <source src="assets/img/demo-screen.mp4" type="video/mp4" />
                                         </video>
@@ -500,71 +506,156 @@
         <div class="container my-5" id="command">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
-                    <div class="card shadow-lg p-4" style="border: 2px solid #218838; background: linear-gradient(135deg, #f9f9f9 0%, #e0f7fa 100%);">
-                        <h3 class="text-center mb-4" style="color: #218838; font-size: 2rem; font-weight: bold;">
-                            🚀 Votre Ticket pour Dominer WhatsApp – C’est Maintenant !
-                        </h3>
-                        <p class="text-center mb-4" style="color: #555; font-size: 1.1rem;">
-                            Remplissez ce formulaire en 2 minutes et transformez vos conversations en ventes. Ne laissez pas vos clients attendre – ils sont déjà sur WhatsApp, prêts à acheter !
+                    <div class="card shadow-lg p-4 p-md-5" style="border: none; background: linear-gradient(135deg, #ffffff 0%, #e0f7fa 100%); border-radius: 15px; box-shadow: 0 10px 30px rgba(33, 136, 56, 0.1);">
+                        <h2 class="text-center mb-4 font-alt" style="color: #218838; font-size: 2.2rem; font-weight: bold;">
+                            <i class="fas fa-rocket me-2 "></i> Dominez WhatsApp Dès Maintenant !
+                        </h2>
+                        <p class="text-center mb-5" style="color: #555; font-size: 1.15rem; line-height: 1.6;">
+                            Transformez vos conversations en ventes en seulement 2 minutes. Vos clients sont sur WhatsApp – ne les faites plus attendre !
                         </p>
                         <form id="form">
                             <input type="hidden" name="access_key" value="61cae21a-3814-44e1-a55e-b9fcb070bb54" />
-                            <div class="row g-3">
+                            <div class="row g-4">
                                 <div class="col-md-6">
-                                    <label class="form-label" style="color: #218838; font-weight: 600;">Votre Nom</label>
-                                    <input type="text" name="nom" class="form-control" placeholder="Ex: Diallo" required style="border-color: #218838;">
-                                    <small class="text-muted">On commence par les bases !</small>
+                                    <div class="input-group">
+                                        <span class="input-group-text" style="background: #218838; color: white; border: none;">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        <div class="form-floating">
+                                            <input type="text" name="nom" class="form-control" id="nom" placeholder="Votre Nom" required style="border-color: #218838; border-radius: 0 5px 5px 0;">
+                                            <label for="nom" style="color: #218838;">Votre Nom</label>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted d-block mt-1"><i class="fas fa-info-circle me-1"></i> Les bases d’abord !</small>
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label" style="color: #218838; font-weight: 600;">Votre Prénom</label>
-                                    <input type="text" name="prenom" class="form-control" placeholder="Ex: Aïssatou" required style="border-color: #218838;">
-                                    <small class="text-muted">Pour qu’on vous appelle par votre prénom ⭐</small>
+                                    <div class="input-group">
+                                        <span class="input-group-text" style="background: #218838; color: white; border: none;">
+                                            <i class="fas fa-user-circle"></i>
+                                        </span>
+                                        <div class="form-floating">
+                                            <input type="text" name="prenom" class="form-control" id="prenom" placeholder="Votre Prénom" required style="border-color: #218838; border-radius: 0 5px 5px 0;">
+                                            <label for="prenom" style="color: #218838;">Votre Prénom</label>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted d-block mt-1"><i class="fas fa-star me-1"></i> On vous appelle comme ça !</small>
                                 </div>
                             </div>
-                            <div class="mt-3">
-                                <label class="form-label" style="color: #218838; font-weight: 600;">Numéro de Contact</label>
-                                <input type="tel" name="contact" class="form-control" placeholder="Ex: +241 74 57 00 40" required style="border-color: #218838;">
-                                <small class="text-muted">On vous appelle pour tout finaliser rapidement.</small>
+                            <div class="mt-4">
+                                <div class="input-group">
+                                    <span class="input-group-text" style="background: #218838; color: white; border: none;">
+                                        <i class="fas fa-phone"></i>
+                                    </span>
+                                    <div class="form-floating">
+                                        <input type="tel" name="contact" class="form-control" id="contact" placeholder="Numéro de Contact" required style="border-color: #218838; border-radius: 0 5px 5px 0;">
+                                        <label for="contact" style="color: #218838;">Numéro de Contact</label>
+                                    </div>
+                                </div>
+                                <small class="text-muted d-block mt-1"><i class="fas fa-clock me-1"></i> On finalise vite !</small>
                             </div>
-                            <div class="mt-3">
-                                <label class="form-label" style="color: #218838; font-weight: 600;">Adresse E-mail</label>
-                                <input type="email" name="email" class="form-control" placeholder="Ex: vous@exemple.com" required style="border-color: #218838;">
-                                <small class="text-muted">Pour vous envoyer votre confirmation VIP.</small>
+                            <div class="mt-4">
+                                <div class="input-group">
+                                    <span class="input-group-text" style="background: #218838; color: white; border: none;">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                    <div class="form-floating">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Adresse E-mail" required style="border-color: #218838; border-radius: 0 5px 5px 0;">
+                                        <label for="email" style="color: #218838;">Adresse E-mail</label>
+                                    </div>
+                                </div>
+                                <small class="text-muted d-block mt-1"><i class="fas fa-check-circle me-1"></i> Votre confirmation VIP !</small>
                             </div>
-                            <div class="mt-3">
-                                <label class="form-label" style="color: #218838; font-weight: 600;">Numéro WhatsApp</label>
-                                <input type="tel" name="whatsapp" class="form-control" placeholder="Ex: +241 65 18 26 11" required style="border-color: #218838;">
-                                <small class="text-muted">Là où la magie va opérer !</small>
+                            <div class="mt-4">
+                                <div class="input-group">
+                                    <span class="input-group-text" style="background: #218838; color: white; border: none;">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </span>
+                                    <div class="form-floating">
+                                        <input type="tel" name="whatsapp" class="form-control" id="whatsapp" placeholder="Numéro WhatsApp" required style="border-color: #218838; border-radius: 0 5px 5px 0;">
+                                        <label for="whatsapp" style="color: #218838;">Numéro WhatsApp</label>
+                                    </div>
+                                </div>
+                                <small class="text-muted d-block mt-1"><i class="fas fa-magic me-1"></i> Là où tout se passe !</small>
                             </div>
-                            <div class="mt-3">
-                                <label class="form-label" style="color: #218838; font-weight: 600;">Votre Formule Gagnante</label>
-                                <select name="offre" class="form-select" required style="border-color: #218838;">
-                                    <option value="">Choisissez votre arme secrète</option>
-                                    <option value="offre1">Offre 1 - 150.000 FCFA (55.000 FCFA/mois)</option>
-                                    <option value="offre2">Offre 2 - 300.000 FCFA (65.000 FCFA/mois)</option>
-                                    <option value="offre3">Offre Personnalisée – Sky’s the limit !</option>
-                                </select>
-                                <small class="text-muted">Laquelle va booster votre business ?</small>
+                            <div class="mt-4">
+                                <div class="input-group">
+                                    <span class="input-group-text" style="background: #218838; color: white; border: none;">
+                                        <i class="fas fa-trophy"></i>
+                                    </span>
+                                    <div class="form-floating">
+                                        <select name="offre" class="form-select" id="offre" required style="border-color: #218838; border-radius: 0 5px 5px 0;">
+                                            <option value="">Choisissez votre formule</option>
+                                            <option value="offre1">Offre 1 - 150.000 FCFA (55.000 FCFA/mois)</option>
+                                            <option value="offre2">Offre 2 - 300.000 FCFA (65.000 FCFA/mois)</option>
+                                            <option value="offre3">Offre Personnalisée – Sky’s the limit !</option>
+                                        </select>
+                                        <label for="offre" style="color: #218838;">Votre Formule Gagnante</label>
+                                    </div>
+                                </div>
+                                <small class="text-muted d-block mt-1"><i class="fas fa-bolt me-1"></i> Boostez votre business !</small>
                             </div>
-                            <div class="mt-3">
-                                <label class="form-label" style="color: #218838; font-weight: 600;">Quand Voulez-Vous Démarrer ?</label>
-                                <input type="date" name="date_rdv" class="form-control" required style="border-color: #218838;">
-                                <small class="text-muted">Plus tôt vous commencez, plus tôt vous gagnez !</small>
+                            <div class="mt-4">
+                                <div class="input-group">
+                                    <span class="input-group-text" style="background: #218838; color: white; border: none;">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </span>
+                                    <div class="form-floating">
+                                        <input type="date" name="date_rdv" class="form-control" id="date_rdv" required style="border-color: #218838; border-radius: 0 5px 5px 0;">
+                                        <label for="date_rdv" style="color: #218838;">Date de Démarrage</label>
+                                    </div>
+                                </div>
+                                <small class="text-muted d-block mt-1"><i class="fas fa-forward me-1"></i> Plus vite, plus de gains !</small>
                             </div>
-                            <div class="mt-4 text-center">
-                                <button type="submit" class="btn btn-success btn-lg w-100" style="background-color: #218838; font-size: 1.2rem; font-weight: bold;">
-                                    💥 Oui, Je Veux Révolutionner Mon Business !
+                            <div class="mt-5 text-center">
+                                <button type="submit" class="btn btn-success btn-lg w-100" style="background: linear-gradient(135deg, #218838 0%, #1a6b34 100%); font-size: 1.3rem; font-weight: bold; padding: 12px; border-radius: 50px; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);">
+                                    <i class="fas fa-bomb me-2"></i> Révolutionnez Votre Business !
                                 </button>
                             </div>
-                            <div id="result" class="text-center mt-3" style="color: #218838;"></div>
+                            <div id="result" class="text-center mt-3" style="color: #218838; font-weight: 600;"></div>
                         </form>
-                        <p class="text-center mt-3" style="font-size: 0.9rem; color: #777;">
-                            🎯 250 millions d’Africains sont sur WhatsApp – vos clients aussi. Ne ratez pas cette opportunité !
+                        <p class="text-center mt-4" style="font-size: 0.95rem; color: #777; font-style: italic;">
+                            <i class="fas fa-bullseye me-1"></i> 250 millions d’Africains sur WhatsApp – vos clients vous attendent !
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <style>
+            #command .card {
+                transition: transform 0.3s ease;
+            }
+            #command .card:hover {
+                transform: translateY(-10px);
+            }
+            #command .input-group-text {
+                border-radius: 5px 0 0 5px;
+                transition: background-color 0.3s ease;
+            }
+            #command .input-group:hover .input-group-text {
+                background-color: #1a6b34;
+            }
+            #command .form-control, #command .form-select {
+                box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+                transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            }
+            #command .form-control:focus, #command .form-select:focus {
+                border-color: #1a6b34;
+                box-shadow: 0 0 8px rgba(33, 136, 56, 0.3);
+            }
+            #command .btn:hover {
+                background: linear-gradient(135deg, #1a6b34 0%, #145829 100%);
+                transform: translateY(-3px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            }
+            #command small {
+                font-size: 0.85rem;
+                transition: color 0.3s ease;
+            }
+            #command .input-group:hover small {
+                color: #218838;
+            }
+        </style>
 
         <footer class="text-white pt-5 pb-3Repo" style="background: linear-gradient(135deg, #1a2a44 0%, #2d6a4f 100%);">
             <div class="container">
