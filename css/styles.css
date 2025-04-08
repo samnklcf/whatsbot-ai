@@ -11119,44 +11119,58 @@ footer a:hover, footer a:active, footer a:focus {
 .masthead .masthead-device-mockup .device-wrapper {
   max-width: 10rem;
 }
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.masthead-device-mockup {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 @media (min-width: 576px) {
   .masthead .masthead-device-mockup .circle {
-    width: 70%;
-    display: block;
+      width: 70%;
+      display: block;
   }
   .masthead .masthead-device-mockup .device-wrapper {
-    max-width: 12.5rem;
+      max-width: 12.5rem;
   }
 }
 @media (min-width: 768px) {
   .masthead .masthead-device-mockup .circle {
-    width: 60%;
+      width: 60%;
   }
   .masthead .masthead-device-mockup .device-wrapper {
-    max-width: 15rem;
+      max-width: 15rem;
   }
 }
 @media (min-width: 992px) {
   .masthead .masthead-device-mockup .circle {
-    width: 90%;
+      width: 90%;
   }
   .masthead .masthead-device-mockup .device-wrapper {
-    max-width: 15rem;
+      max-width: 15rem;
   }
 }
 @media (min-width: 1200px) {
   .masthead .masthead-device-mockup .circle {
-    width: 75%;
+      width: 75%;
   }
   .masthead .masthead-device-mockup .device-wrapper {
-    max-width: 15rem;
+      max-width: 15rem;
   }
 }
 @media (min-width: 1400px) {
   .masthead .masthead-device-mockup .circle {
-    width: 70%;
+      width: 70%;
   }
   .masthead .masthead-device-mockup .device-wrapper {
-    max-width: 17rem;
+      max-width: 17rem;
   }
 }
